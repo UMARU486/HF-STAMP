@@ -2,8 +2,6 @@
 
 面向场景：ED triage + handoff（急诊分诊与交接）。
 
-> 仅使用公开/合成案例文本，不使用真实病人隐私数据。
-
 ## 目录结构
 
 ```text
@@ -49,7 +47,7 @@ python -m stpa_tool --help
 python -m stpa_tool analyze examples/case1_delay_ecg.md --out outputs/
 ```
 
-当前初始版本可运行并导出以下文件（即使内容为空）：
+当前初始版本可运行并导出以下文件：
 
 - actors.csv
 - steps.csv
@@ -70,4 +68,4 @@ pytest -q
 ## 说明
 
 - 当前为骨架版本，`extract.py` 为占位实现（返回空列表）。
-- 后续可逐步补充规则或提示词模板，实现半自动抽取与风险分析。
+- 后续可逐步补充实现半自动抽取与风险分析。
